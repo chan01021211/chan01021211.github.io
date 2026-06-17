@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>거닐다 — 테마별 국내 여행지 가이드</title>
+<style>
+  
+  * { 
+    margin: 0; 
+    padding: 0; 
+  }
+ 
+  body {
+    background: #FAFAF7; 
+    color: #2D2D2D;      
+    line-height: 1.7;
+  }
+ 
+.first {
+    position: relative;
+    background-color: #173C39;    
+    text-align: center; 
+    padding: 220px 0; 
+  }
+ 
+  .pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    position: relative;
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+  }
+ 
+  .sub {
+    position: relative;
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+  }
+ 
+  .bar {
+    background: #1A2E1A;
+    padding: 16px;
+    text-align: center; 
+  }
+ 
+  .bar a {
+    color: rgba(255,255,255,0.65);
+    text-decoration: none;
+    font-size: 14px;
+    display: inline; 
+    margin: 7.5px 15px; 
+  }
+ 
+  .bar a:hover { 
+    color: #E8956D; 
+  }
+ 
+  .theme {
+    padding: 80px 0 0;
+  }
+ 
+  .theme-header {
+    text-align: center;
+    padding: 0 24px 50px;
+  }
+ 
+  .theme-icon {
+    font-size: 42px;
+    display: block;
+    margin-bottom: 10px;
+  }
+ 
+  .theme-label {
+    font-size: 11px;
+    color: #7A7A72;
+    margin-bottom: 8px;
+  }
+ 
+  .theme-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1A2E1A; 
+    margin-bottom: 15px;
+  }
+ 
+  .theme-desc {
+    max-width: 480px;
+    margin: 0 auto;
+    color: #7A7A72;
+    font-size: 15px;
+  }
+ 
+  .cards {
+    display: flex;
+}
+ 
+  .card {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: #ccc;
+  }
+ 
+ 
+  .card-overlay {
+    position: absolute;
+    bottom: 0;          
+    left: 0;         
+    width: 100%;       
+    padding: 25px;      
+  }
+ 
+  .card-name {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+ 
+  .card-text {
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+  }
+ 
+  .theme-title { color: #1a3a1a; }
+
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+ 
+  #forest { background: #EEF6EC; }
+  #ocean { background-color: #e0f2fe; }
+  #history { background-color: #f4eae1 }
+  #city { background-color: #f3effa; }
+  #food { background-color: #fdf8eb; }
+  #activity { background-color: #eef7f2; }
+  #camping { background-color: #fdf8eb; }
+  
+  footer {
+    background: #1A2E1A; 
+    color: rgba(255,255,255,0.45);
+    text-align: center;
+    padding: 40px 16px;
+    font-size: 13px;
+    margin-top: 80px;
+  }
+
+  #footer-p1 {
+    padding: 40px 16px 50px;
+  }
+
+  #footer-p2 {
+    font-size: 14px; color: rgba(255,255,255,0.3);
+  }
+</style>
+</head>
+<body>
+ 
+<section class="first">
+  <div class="pattern"></div>
+  <h1 class="title">거<span>닐</span>다</h1>
+  <p class="sub">테마로 떠나는 국내 여행지 가이드 · 7가지 테마</p>
+</section>
+ 
+<nav class="bar">
+  <a href="#forest">🌲 숲/산책</a>
+  <a href="#ocean">🌊 바다/섬</a>
+  <a href="#history">🏯 역사/전통</a>
+  <a href="#city">🏙️ 도심/야경</a>
+  <a href="#food">🍕 맛집/카페</a>
+  <a href="#activity">🏄 액티비티</a>
+  <a href="#camping">⛺ 캠핑/차박</a>
+</nav>
+ 
+<section class="theme" id="forest">
+  <div class="theme-header">
+    <span class="theme-icon">🌲</span>
+    <p class="theme-label">Theme 01 · Forest</p>
+    <h2 class="theme-title">숲과 산책</h2>
+    <p class="theme-desc">초록빛 나무 아래 천천히 걷는 것만으로도 충분한, 자연이 주는 고요한 위로.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="./img/saryeoni forest trail.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">제주 사려니숲길</p>
+        <p class="card-text">삼나무가 빽빽하게 우거진 신비로운 분위기의 대표 숲길</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/wondaeri birch forest.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">인제 원대리 자작나무숲</p>
+        <p class="card-text">하얀 자작나무가 이국적인 풍경을 자아내는 사계절 명소</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/juknokwon bamboo garden.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">담양 죽녹원</p>
+        <p class="card-text">푸른 대나무 숲길을 걸으며 힐링할 수 있는 대삼림</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/the garden of morning calm.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">가평 아침고요수목원</p>
+        <p class="card-text">축령산 자락에 자리 잡은 한국 고유의 아름다움을 담은 정원</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="theme" id="ocean">
+  <div class="theme-header">
+    <span class="theme-icon">🌊</span>
+    <p class="theme-label">Theme 02 · Ocean</p>
+    <h2 class="theme-title">바다와 섬</h2>
+    <p class="theme-desc">파도 소리와 짠 바람, 수평선 너머로 펼쳐지는 무한한 해방감.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="./img/anmok beach.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">강릉 안목해변</p>
+        <p class="card-text">푸른 동해바다와 유명한 커피 거리가 어우러진 해변</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/gwangalli beach.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">부산 광안리해수욕장</p>
+        <p class="card-text">화려한 광안대교 전망과 트렌디한 해변 문화를 즐기는 곳</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/surfyy beach.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">양양 서피비치</p>
+        <p class="card-text">이국적인 서핑 전용 해변과 힙한 오션뷰 바가 있는 핫플레이스</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/odongdo island.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">여수 오동도</p>
+        <p class="card-text">동백꽃과 기암절벽이 어우러진 아름다운 한려수도의 시작점</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="theme" id="history">
+  <div class="theme-header">
+    <span class="theme-icon">🏯</span>
+    <p class="theme-label">Theme 03 · History</p>
+    <h2 class="theme-title">역사와 전통</h2>
+    <p class="theme-desc">켜켜이 쌓인 시간의 결을 따라 걷다 보면 지금 이 순간이 더 선명해집니다.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="./img/hwangnidan-gil.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">경주 황리단길</p>
+        <p class="card-text">신라 천년의 고분군과 트렌디한 한옥 거리가 공존하는 곳</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/jeonju hanok village.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">전주 한옥마을</p>
+        <p class="card-text">국내 최대 규모의 도심 한옥촌으로 전통문화 체험의 중심지</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/gyeongbokgung palace.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">서울 경복궁</p>
+        <p class="card-text">조선 시대의 중심 궁궐이자 한복을 입고 찾는 대표 명소</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/hwaseong haenggung palace.png " class="img">
+      <div class="card-overlay">
+        <p class="card-name">수원 화성행궁</p>
+        <p class="card-text">정조의 효심과 조선 후기 성곽 건축의 아름다움을 느낄 수 있는 곳</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="theme" id="city">
+  <div class="theme-header">
+    <span class="theme-icon">🏙️</span>
+    <p class="theme-label">Theme 04 · City</p>
+    <h2 class="theme-title">도심과 야경</h2>
+    <p class="theme-desc">불빛이 가장 아름다운 시간, 도시의 리듬에 몸을 맡겨보세요.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="./img/ddp.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">서울 DDP</p>
+        <p class="card-text">가장 힙한 팝업스토어와 트렌디한 현대 건축이 모인 곳</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/songdo central park.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">인천 송도 센트럴파크</p>
+        <p class="card-text">미래도시 느낌의 마천루와 수상 레저를 동시에 즐기는 야경 명소</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/daegu modern alley.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">대구 근대골목</p>
+        <p class="card-text">활기찬 대도시의 중심가와 골목 투어를 함께 즐기는 지역</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/haeundae lct.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">부산 해운대 엘시티</p>
+        <p class="card-text">화려한 빌딩 숲과 해안 도심의 야경을 만날 수 있는 곳</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="theme" id="food">
+  <div class="theme-header">
+    <span class="theme-icon">🍕</span>
+    <p class="theme-label">Theme 05 · Food</p>
+    <h2 class="theme-title">맛집과 카페</h2>
+    <p class="theme-desc">먹는 것이 곧 여행이다. 그 지역만의 맛을 찾아 골목 구석구석을 누빕니다.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="./img/aewol cafe street.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">제주 애월 카페거리</p>
+        <p class="card-text">바다를 바라보는 감성 카페들과 로컬 먹거리의 천국</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/gangneung jungang market.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">강릉 중앙시장</p>
+        <p class="card-text">닭강정, 장칼국수, 순두부 젤라또 등 먹거리가 끊이지 않는 곳</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/abai village.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">속초 아바이마을</p>
+        <p class="card-text">오징어순대, 닭강정 등 구수한 로컬 음식이 가득한 시장 여행지</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/anjirang gopchang alley.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">대구 안지랑 곱창골목</p>
+        <p class="card-text">미식의 도시 대구를 대표하는 이색 먹거리 테마 거리</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="theme" id="activity">
+  <div class="theme-header">
+    <span class="theme-icon">🏄</span>
+    <p class="theme-label">Theme 06 · Activity</p>
+    <h2 class="theme-title">액티비티</h2>
+    <p class="theme-desc">짜릿한 순간이 기억을 만든다. 몸으로 느끼는 여행의 진짜 재미.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="./img/danyang paragliding.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">단양 패러글라이딩</p>
+        <p class="card-text">남한강 풍경을 내려다보며 하늘을 나는 짜릿한 체험</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/tongyeong luge.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">통영 루지</p>
+        <p class="card-text">아시아 최대 규모의 루지 카트를 타고 내려오는 다이내믹한 명소</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/jungmun surfing.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">제주 중문 서핑</p>
+        <p class="card-text">서핑러들의 성지이자 다양한 아웃도어 액티비티를 모아둔 곳</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/phoenix park pyeongchang.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">평창 휘닉스파크</p>
+        <p class="card-text">겨울 스키·보드는 물론, 여름에도 루지와 워터파크를 즐기는 곳</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="theme" id="camping">
+  <div class="theme-header">
+    <span class="theme-icon">⛺</span>
+    <p class="theme-label">Theme 07 · Camping</p>
+    <h2 class="theme-title">캠핑과 차박</h2>
+    <p class="theme-desc">별이 보이는 밤, 모닥불 냄새, 새소리로 깨는 아침. 자연 속에서의 하루.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <img src="./img/mongsanpo beach.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">태안 몽산포해수욕장</p>
+        <p class="card-text">울창한 소나무 숲에서 바다를 바라보며 즐기는 오토캠핑의 성지</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/mindungsan camping ground.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">정선 민둥산</p>
+        <p class="card-text">억새꽃으로 유명하며 밤에는 은하수와 별을 보기 좋은 청정 차박 명소</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/sanjeong lake glamping site.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">포천 산정호수 글램핑</p>
+        <p class="card-text">호수와 산에 둘러싸여 장비 없이도 편하게 즐기는 글램핑 단지</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/jirisan foothill campground.png" class="img">
+      <div class="card-overlay">
+        <p class="card-name">지리산 자락 캠핑장</p>
+        <p class="card-text">깊은 산속 계곡 소리를 들으며 온전한 자연을 느끼는 캠핑지</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<footer>
+  <p id="footer-p1">거닐다 - 테마로 떠나는 국내 여행지 가이드</p>
+  <p id="footer-p2">
+    ※ 본 페이지에 사용된 이미지는 모두 무료 AI를 이용하여 제작된 참고용 사진입니다.
+  </p>
+</footer>
+ 
+</body>
+</html>
